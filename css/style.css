@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: monospace;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top left,rgba(255, 0, 0, 0.75),rgba(255, 166, 0, 0.75),rgba(128, 0, 128, 0.75));
+    
+}
+
+.form_dev{
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    border-radius:20px;
+    animation: move 10s 2s infinite ease-in;
+}
+
+.form_dev div label{
+    font-size: 23px;
+
+}
+
+.form_dev .form-data{
+    border:none;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size:23px;
+}
+
+.form_dev .btn{
+    border:none;
+    margin-bottom: 20px;
+    background-color: green;
+    width: 100%;
+    height: 50px;
+    font-size:23px;
+    cursor: pointer;
+}
+
+.form_dev h1{
+    padding: 50px;
+    font-size: 50px;
+}
+
+input[type=button]{
+    background-color: green;
+    width: 80%;
+}
+
+.easter_egg img{
+    display: none;
+}
+
+@keyframes move{
+    0%{
+        box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+    }
+    10%{
+        box-shadow: 1px 0px 31px 6px rgba(5, 1, 252,0.1);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(5, 1, 252,0.1);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(5, 1, 252,0.1);
+    }
+    20%{
+        box-shadow: 1px 0px 31px 6px rgba(255, 0, 0);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(255, 0, 0);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(255, 0, 0);
+    }
+    30%{
+        box-shadow: 1px 0px 31px 6px rgba(255, 238, 0);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(255, 238, 0);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(255, 251, 0);
+    }
+    40%{
+        box-shadow: 1px 0px 31px 6px rgba(0, 255, 255);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(0, 217, 255);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(0, 238, 255);
+    }
+    50%{
+        box-shadow: 1px 0px 31px 6px rgba(255, 0, 242);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(255, 0, 242);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(255, 0, 255);
+    }
+    60%{
+        box-shadow: 1px 0px 31px 6px rgba(148, 92, 9,0.1);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(148, 92, 9,0.1);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(148, 92, 9,0.1);
+    }
+    70%{
+        box-shadow: 1px 0px 31px 6px rgba(255, 0, 0,0.1);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(255, 0, 0,0.1);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(255, 0, 0,0.1);
+    }
+    80%{
+        box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+    }
+    90%{
+        box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(0,255,0,1);
+    }
+    100%{
+        box-shadow: 1px 0px 31px 6px rgba(255, 0, 242,0.1);
+        -webkit-box-shadow: 1px 0px 31px 6px rgba(255, 0, 242,0.1);
+        -moz-box-shadow: 1px 0px 31px 6px rgba(255, 0, 255,0.1);
+    }
+}
+
+@media screen and (max-width:500px){
+    .form_dev{
+        width: 100%;
+        animation: none;
+        height:100%;
+        border-radius: 0px;
+    }
+    .easter_egg img{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
